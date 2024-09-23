@@ -10,3 +10,14 @@ function getNumberById(id){
     const inputNumber = parseFloat(inputValue);
     return inputNumber;
 }
+
+function showSectionById(id){
+    
+    document.getElementById('donation-section').classList.add('hidden');   
+
+    document.getElementById('history-section').classList.add('hidden');    
+
+    //show the section with id
+    document.getElementById(id).classList.remove('hidden');
+   
+}
