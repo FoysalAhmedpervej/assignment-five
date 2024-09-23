@@ -6,8 +6,102 @@
     <title>Donate Bangladesh</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<style>
+    .font-lexend{
+        font-family: "Lexend", sans-serif;
+    }
+</style>
 </head>
-<body>
+<body data-theme="light" class="font-lexend">
+    <div class= "flex flex-col gap-7 py-10 bg-orange-50">
+        <div class="navbar md:fixed z-10 top-0 bg-orange-50">
+            <div class="navbar-start">
+                <a class="btn">Blog</a>                        
+            </div>
+            <div class="navbar-center hidden md:flex">
+                <img src="assets/logo.png" alt="">
+                <h2 class="ml-2 ">Donate Bangladesh</h2>
+            </div>
+            <div class="navbar-end">
+                <img src="assets/coin.png" alt="">
+                <p class="ml-2"> <span id="main-balance">5500 </span> BDT</p>
+            </div>            
+          </div>
     
+    <!-- Donation sectoin -->
+       <div id="donation-section" class="md:w-full flex flex-col gap-5 bg-white items-center">
+        <div class="flex justify-center mt-10 gap-5">
+            <button class="btn w-28 btn-outline hover:bg-green-400">Donation</button>
+            <button class="btn w-28 btn-outline hover:bg-green-400">History</button>
+        </div>
+        <!-- card one -->
+        <div class="card p-2 md:p-4 lg:card-side md:w-4/5 bg-base-100 border">
+           <div class="image">
+            <figure class="h-full">
+              <img
+                src="assets/noakhali.png"
+                alt="Album" />
+            </figure>
+           </div>
+            <div class="card-body md:w-1/2">
+              <button class="btn w-fit">
+                <img src="assets/coin.png" alt="">
+                <p  class="ml-2"><span id="noakhali-balance">500</span> BDT</p>
+            </button>
+                <h2 class="text-xl w-full font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
+                <p class="text-sm font-light">  The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+              <div class="card-actions justify-end">
+                <input id="money-noakhali" type="text" placeholder="write donation amount" class="input input-bordered w-full" required /> 
+                        <button id="btn-noakhali" class="btn md:mt-4 w-full bg-[#B4F461]">Donate Now</button>  
+              </div>
+            </div>
+          </div>
+        <!-- card two  -->
+        <div class="card p-2 md:p-4 lg:card-side md:w-4/5 bg-base-100 border">
+          <figure class="md:w-1/2">
+            <img
+              src="assets/feni.png"
+              alt="Album" />
+          </figure>
+          <div class="card-body md:w-1/2">
+            <button class="btn w-fit">
+              <img src="assets/coin.png" alt="">
+              <p  class="ml-2"><span id="feni-balance">600</span> BDT</p>
+          </button>
+              <h2 class="text-xl w-full font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
+              <p class="text-sm font-light"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+            <div class="card-actions justify-end">
+              <input id="money-feni" type="text" placeholder="write donation amount" class="input input-bordered w-full" required /> 
+                      <button id="btn-feni" class="btn md:mt-4 w-full bg-[#B4F461]">Donate Now</button>  
+            </div>
+          </div>
+        </div>
+        <!-- card three -->
+        <div class="card p-2 md:p-4 lg:card-side md:w-4/5 bg-base-100 border">
+          <figure class="md:w-1/2">
+            <img
+              src="assets/quota-protest.png"
+              alt="Album" />
+          </figure>
+          <div class="card-body md:w-1/2">
+           <button class="btn w-fit">
+              <img src="assets/coin.png" alt="">
+              <p  class="ml-2"><span id="injures-balance">450</span> BDT</p>
+          </button>
+              <h2 class="text-xl w-full font-bold">Aid for Injured in the Quota Movement</h2>
+              <p class="text-sm font-light"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+            <div class="card-actions justify-end">
+              <input id="money-injurs" type="text" placeholder="write donation amount" class="input input-bordered w-full" required /> 
+                      <button id="btn-injurs" class="btn md:mt-4 w-full bg-[#B4F461]">Donate Now</button>  
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
 </body>
+<script src="js/function.js"></script>
+<script src="js/addmoney.js"></script>
 </html>
