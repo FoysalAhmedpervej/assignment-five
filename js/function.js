@@ -23,7 +23,6 @@ function showSectionById(id){
 }
 
 
-// Function to show current date and time
 function showtime() {
     const now = new Date();
     const options = {
@@ -33,9 +32,11 @@ function showtime() {
         hour: '2-digit',
         minute: '2-digit',
         second: '2-digit',
+        timeZoneName: 'long', // Automatically detect and show user's time zone and place
         hour12: false
     };
-    return now.toLocaleString('en-US', options);
+    
+    return new Intl.DateTimeFormat('en-US', options).format(now);
 }
 
 function donationHistory(donation, place) {
@@ -44,7 +45,7 @@ function donationHistory(donation, place) {
     const dateTime = showtime(); // Get the current date and time
     div.innerHTML = `
         <h2 class="text-xl font-bold">${donation} taka donated for ${place}, Bangladesh</h2>
-        <p class="text-gray-600 mt-4">Date: ${dateTime} GMT +0600 (Bangladesh Standard Time)</p>
+        <p class="text-gray-600 mt-4">Date: ${dateTime} </p>
     `;
     div.classList.add('border', 'md:p-5','p-2', 'mx-auto', 'rounded-xl','md:w-4/5','w-full');
 
