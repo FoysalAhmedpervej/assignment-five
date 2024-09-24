@@ -46,7 +46,7 @@ function donationHistory(donation, place) {
         <h2 class="text-xl font-bold">${donation} taka donated for ${place}, Bangladesh</h2>
         <p class="text-gray-600 mt-4">Date: ${dateTime} GMT +0600 (Bangladesh Standard Time)</p>
     `;
-    div.classList.add('border', 'p-5', 'mx-auto', 'rounded-xl','w-4/5');
+    div.classList.add('border', 'md:p-5','p-2', 'mx-auto', 'rounded-xl','md:w-4/5','w-full');
 
     // Append the new donation entry to the transaction container
     const historyContainer = document.getElementById('history-container');

@@ -18,25 +18,25 @@
 </head>
 
 <body data-theme="light" class="font-lexend ">
-  <div class="flex flex-col gap-7 relative py-10 bg-orange-50">
+  <div class="flex flex-col gap-7 relative md:py-10 bg-orange-50">
  <!-- Pop-up box -->
- <div id="pop-up" class="fixed inset-0 flex items-center hidden justify-center bg-black bg-opacity-50 z-20">
-  <div class="card bg-white pt-8 w-fit opacity-100 z-50 mx-auto my-auto shadow-xl rounded-lg">
-    <h2 class="card-title text-2xl font-bold mx-auto">Congrats!</h2>
-    <figure class="px-10 pt-10">
-      <img src="assets/coin.png" alt="Coin" class="rounded-xl" />
+ <div id="pop-up" class="fixed inset-0 items-center hidden justify-center bg-black bg-opacity-50 z-20">
+  <div class="card bg-white px-3 md:px-9 mt-20 flex flex-col justify-center w-fit opacity-100 z-50 mx-auto my-auto shadow-xl rounded-lg">
+    <h2 class="card-title text-xl mt-8 md:text-3xl font-bold mx-auto">Congrates !</h2>
+    <figure class="">
+      <img src="assets/coin.png" alt="Coin" class="w-3/12 mx-auto mt-5" />
     </figure>
-    <div class="card-body items-center text-center">
-      <p class="text-lg">You have donated for Humankind</p>
-      <h2 class="text-3xl text-green-500 font-semibold">Successfully</h2>          
-      <div class="card-actions mt-4">
-        <button id="close-pop-up" class="bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded transition">Close Information</button>
+    <div class="card-body mt-0 items-center text-center">
+      <p class="text-sm">You have donated for Humankind</p>
+      <h2 class="md:text-3xl text-xl font-semibold">Successfully</h2>          
+      <div class="card-actions mt-2">
+        <button id="close-pop-up" class="bg-gray-300 hover:bg-gray-400 px-2 py-1 rounded transition">Close Information</button>
       </div>
     </div>
   </div>
 </div>
 
-    <div class="navbar md:fixed pb-10 bg-orange-50 z-10 top-0  ">
+    <div class="navbar fixed md:pb-10 bg-orange-50 z-10 top-0  ">
       <div class="navbar-start ">
         <div class="bg-[#B4F461] rounded-lg" ><button id="show-blog-section" class="btn btn-outline">Blog</button></div>        
         <div class=" bg-[#B4F461] rounded-lg"><button id="show-home-section" class="btn btn-outline hidden">Home</button></div>                
@@ -50,9 +50,9 @@
         <p class="ml-2"> <span id="main-balance">5500 </span> BDT</p>
       </div>
     </div>
-   <div class="bg-white">
+   <div class="bg-white flex flex-col">
      <!-- menu section -->
-     <div id="menu-section" class="flex justify-center my-10 pt-10 gap-5">
+     <div id="menu-section" class="flex justify-center md:my-10 my-5 pt-12 gap-5">
       <button id="show-donation-section" class="btn bg-[#B4F461] w-28 btn-outline hover:bg-green-400">Donation</button>
       <button id="show-history-section" class="btn w-28 btn-outline hover:bg-green-400">History</button>
     </div>    
@@ -63,7 +63,7 @@
         <figure class="md:w-1/2">
           <img src="assets/noakhali.png" alt="Album" />
         </figure>
-        <div class="card-body md:w-1/2">
+        <div class="w-full p-2 flex flex-col gap-3 md:w-1/2  md:ml-4">
           <button class="btn w-fit">
             <img src="assets/coin.png" alt="">
             <p class="ml-2"><span id="noakhali-balance">500</span> BDT</p>
@@ -85,7 +85,7 @@
         <figure class="md:w-1/2">
           <img src="assets/feni.png" alt="Album" />
         </figure>
-        <div class="card-body md:w-1/2">
+        <div class="w-full p-2 flex flex-col gap-3 md:w-1/2  md:ml-4">
           <button class="btn w-fit">
             <img src="assets/coin.png" alt="">
             <p class="ml-2"><span id="feni-balance">600</span> BDT</p>
@@ -108,7 +108,7 @@
         <figure class="md:w-1/2">
           <img src="assets/quota-protest.png" alt="Album" />
         </figure>
-        <div class="card-body md:w-1/2">
+        <div class="w-full p-2 flex flex-col gap-3 md:w-1/2 md:ml-4">
           <button class="btn w-fit">
             <img src="assets/coin.png" alt="">
             <p class="ml-2"><span id="injures-balance">450</span> BDT</p>
@@ -129,7 +129,7 @@
       </div>
     </div>
     <!-- History section -->
-    <div id="history-section" class="h-full hidden p-20 ">
+    <div id="history-section" class="h-full hidden md:p-20 p-2 ">
       <div id="history-container" class="card bg-base-100r">
       
       </div>
@@ -143,8 +143,8 @@
           <img class="ml-5 w-12" src="assets/icon-faq.png" alt="">
         </div>
       </div>
-      <div class="flex flex-col mb-20 items-center">
-        <div tabindex="0" class="collapse w-4/5 min-h-20 collapse-arrow border-base-300 border rounded-md">
+      <div class="flex flex-col w-full px-4 mb-20 items-center">
+        <div tabindex="0" class="collapse md:w-4/5 min-h-20 collapse-arrow border-base-300 border rounded-md">
           <h2 class="collapse-title text-xl font-medium">What is the document Object Model (DOM) ?</h2>
           <div class="collapse-content">
             <p>The Document Object Model (DOM) is the data representation of the objects that comprise the structure and
@@ -153,14 +153,15 @@
           </div>
 
         </div>
-        <div tabindex="0" class="collapse w-4/5 min-h-20 collapse-arrow border-base-300 border rounded-md">
-          <h2 class="collapse-title text-xl font-medium">How do you selec an element from the DOM ?</h2>
+        <div tabindex="0" class="collapse md:w-4/5 min-h-20 collapse-arrow border-base-300 border rounded-md">
+          <h2 class="collapse-title text-xl font-medium">How do you select an element from the DOM ?</h2>
           <div class="collapse-content">
             <p>I can select an element using methods like document.getElementById('id') to get an element by ID or document.querySelector('.class') for the first element matching a selector. For multiple elements, I’d use document.getElementsByClassName('class'). These methods help me access elements for further manipulation in my code.</p>
           </div>
 
         </div>
-        <div tabindex="0" class="collapse w-4/5 min-h-20 collapse-arrow border-base-300 border rounded-md">
+        
+        <div tabindex="0" class="collapse md:w-4/5 min-h-20 collapse-arrow border-base-300 border rounded-md">
           <h2 class="collapse-title text-xl font-medium">What is event delegation in the context of DOM, and why is it useful ?</h2>
           <div class="collapse-content">
             <p>Event delegation is a technique where I attach a single event listener to a parent element, allowing it to handle events on its child elements by leveraging event bubbling. This reduces the number of listeners and makes it easier to handle dynamically added elements, improving both performance and maintainability.
@@ -169,7 +170,7 @@
           </div>
 
         </div>
-        <div tabindex="0" class="collapse w-4/5 min-h-20 collapse-arrow border-base-300 border rounded-md">
+        <div tabindex="0" class="collapse md:w-4/5 min-h-20 collapse-arrow border-base-300 border rounded-md">
           <h2 class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM ?</h2>
           <div class="collapse-content">
             <p>I manipulate an element's attributes with methods like element.setAttribute('attr', 'value') or element.getAttribute('attr') to retrieve values. For styles, I use element.style.propertyName = 'value', such as element.style.color = 'red' to change an element's text color directly via JavaScript.</p>

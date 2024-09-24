@@ -18,6 +18,7 @@ document.getElementById('btn-noakhali').addEventListener('click',function(event)
     const place = 'Food relief in Noakhali';
     donationHistory(donationForNoakhali,place);
     alert('You have donated '+ donationForNoakhali +' taka for people of noakhali');
+    showPopUp();
     document.getElementById('main-balance').innerText = newBalance;
     document.getElementById('noakhali-balance').innerText = noakhaliBalance;
     //console.log('dontion for noakhali is: ',donationForNoakhali);
@@ -43,6 +44,7 @@ document.getElementById('btn-feni').addEventListener('click',function(event){
     const place = 'Food relief in Feni';
     donationHistory(donationForFeni,place);
     alert('you have donated '+donationForFeni+' taka for people of Feni');
+    showPopUp();
     document.getElementById('main-balance').innerText = newBalance;
     document.getElementById('feni-balance').innerText = feniBalance;
     //console.log('donation for feni is: ',donationForFeni);
