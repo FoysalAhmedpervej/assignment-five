@@ -16,8 +16,7 @@ document.getElementById('btn-noakhali').addEventListener('click',function(event)
     const newBalance = mainBalance - donationForNoakhali;
     noakhaliBalance+=donationForNoakhali;
     const place = 'Food relief in Noakhali';
-    donationHistory(donationForNoakhali,place);
-    alert('You have donated '+ donationForNoakhali +' taka for people of noakhali');
+    donationHistory(donationForNoakhali,place);  
     showPopUp();
     document.getElementById('main-balance').innerText = newBalance;
     document.getElementById('noakhali-balance').innerText = noakhaliBalance;
@@ -42,8 +41,7 @@ document.getElementById('btn-feni').addEventListener('click',function(event){
     const newBalance = mainBalance - donationForFeni;
     feniBalance+=donationForFeni;
     const place = 'Food relief in Feni';
-    donationHistory(donationForFeni,place);
-    alert('you have donated '+donationForFeni+' taka for people of Feni');
+    donationHistory(donationForFeni,place);   
     showPopUp();
     document.getElementById('main-balance').innerText = newBalance;
     document.getElementById('feni-balance').innerText = feniBalance;
@@ -67,8 +65,7 @@ document.getElementById('btn-injurs').addEventListener('click',function(event){
     const newBalance = mainBalance - donationForInjurs;
     injursBalance+=donationForInjurs;
     const place = 'Injured in the Quota Movement';
-    donationHistory(donationForInjurs,place);
-    alert('you have donated '+ donationForInjurs + ' taka for injured peoples');
+    donationHistory(donationForInjurs,place);    
     showPopUp();
     document.getElementById('main-balance').innerText = newBalance;
     document.getElementById('injures-balance').innerText = injursBalance;
